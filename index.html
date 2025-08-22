@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberGuard Solutions - Premier Cybersecurity Services</title>
+    <meta name="description" content="CyberGuard Solutions offers proactive cybersecurity services, including penetration testing, threat intelligence, and incident response to protect your business from evolving digital threats.">
+    
+    <title>CyberGuard Solutions | Proactive Cybersecurity & Threat Protection</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/0a192f/ffffff?text=Cyber+Security');
@@ -40,18 +47,18 @@
     <!-- Header & Navigation -->
     <header id="header" class="sticky-nav">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="nav-link text-2xl font-bold text-white flex items-center" data-target="home">
+            <a href="#home" class="nav-link text-2xl font-bold text-white flex items-center">
                 <svg class="w-8 h-8 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 CyberGuard
             </a>
             <div id="desktop-nav" class="hidden md:flex space-x-6 items-center">
-                <a href="#" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300 active" data-target="home">Home</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300" data-target="services">Services</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300" data-target="about">About Us</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300" data-target="testimonials">Testimonials</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300" data-target="contact">Contact</a>
+                <a href="#home" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300 active">Home</a>
+                <a href="#services" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300">Services</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300">About Us</a>
+                <a href="#testimonials" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-blue-400 transition duration-300">Contact</a>
             </div>
-            <a href="#" data-target="contact" class="nav-link hidden md:block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            <a href="#contact" class="nav-link hidden md:block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                 Get a Free Consultation
             </a>
             <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -60,29 +67,29 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#" class="nav-link block py-2 text-gray-300 hover:text-blue-400 active" data-target="home">Home</a>
-            <a href="#" class="nav-link block py-2 text-gray-300 hover:text-blue-400" data-target="services">Services</a>
-            <a href="#" class="nav-link block py-2 text-gray-300 hover:text-blue-400" data-target="about">About Us</a>
-            <a href="#" class="nav-link block py-2 text-gray-300 hover:text-blue-400" data-target="testimonials">Testimonials</a>
-            <a href="#" class="nav-link block py-2 text-gray-300 hover:text-blue-400" data-target="contact">Contact</a>
-            <a href="#" data-target="contact" class="nav-link block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg text-center">Get a Free Consultation</a>
+            <a href="#home" class="nav-link block py-2 text-gray-300 hover:text-blue-400 active">Home</a>
+            <a href="#services" class="nav-link block py-2 text-gray-300 hover:text-blue-400">Services</a>
+            <a href="#about" class="nav-link block py-2 text-gray-300 hover:text-blue-400">About Us</a>
+            <a href="#testimonials" class="nav-link block py-2 text-gray-300 hover:text-blue-400">Testimonials</a>
+            <a href="#contact" class="nav-link block py-2 text-gray-300 hover:text-blue-400">Contact</a>
+            <a href="#contact" class="nav-link block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg text-center">Get a Free Consultation</a>
         </div>
     </header>
 
     <main>
         <!-- Home Page Content -->
-        <section id="home-page" class="page-content">
+        <section id="home" class="page-content">
             <div class="hero-bg">
                 <div class="container mx-auto px-6 text-center py-40">
                     <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">Fortifying Your Digital Frontier</h1>
-                    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">Proactive Cybersecurity Solutions to Protect Your Business from Evolving Threats. We are your trusted partner in digital defense.</p>
-                    <a href="#" data-target="services" class="nav-link bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Explore Our Services</a>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">We provide proactive cybersecurity solutions to protect your business from evolving threats. Consider us your trusted partner in fortifying your digital defense and securing your assets.</p>
+                    <a href="#services" class="nav-link bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Explore Our Services</a>
                 </div>
             </div>
         </section>
 
         <!-- Services Page Content -->
-        <section id="services-page" class="page-content hidden py-20 bg-gray-800">
+        <section id="services" class="page-content py-20 bg-gray-800">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white">Our Cybersecurity Services</h2>
@@ -126,7 +133,7 @@
         </section>
 
         <!-- About Us Page Content -->
-        <section id="about-page" class="page-content hidden py-20 bg-gray-900">
+        <section id="about" class="page-content py-20 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-10 md:mb-0">
@@ -136,14 +143,14 @@
                         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Who We Are</h2>
                         <p class="text-gray-400 mb-6">CyberGuard Solutions was founded by a team of passionate cybersecurity veterans dedicated to making the digital world a safer place. Our mission is to provide enterprise-level security solutions to businesses of all sizes, protecting them from the ever-growing landscape of cyber threats.</p>
                         <p class="text-gray-400 mb-6">We believe in a proactive, partnership-based approach. We work closely with our clients to understand their unique challenges and build tailored security strategies that align with their business goals.</p>
-                        <a href="#" data-target="contact" class="nav-link text-blue-400 hover:text-blue-500 font-semibold transition duration-300">Meet Our Experts &rarr;</a>
+                        <a href="#contact" class="nav-link text-blue-400 hover:text-blue-500 font-semibold transition duration-300">Meet Our Experts &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonials Page Content -->
-        <section id="testimonials-page" class="page-content hidden py-20 bg-gray-800">
+        <section id="testimonials" class="page-content py-20 bg-gray-800">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white">What Our Clients Say</h2>
@@ -179,7 +186,7 @@
         </section>
 
         <!-- Contact Page Content -->
-        <section id="contact-page" class="page-content hidden py-20 bg-gray-900">
+        <section id="contact" class="page-content py-20 bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-white">Get in Touch</h2>
@@ -238,48 +245,19 @@
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const navLinks = document.querySelectorAll('.nav-link');
-            const pageContents = document.querySelectorAll('.page-content');
-
-            // --- Page Navigation Logic ---
-            function showPage(targetId) {
-                // Hide all pages
-                pageContents.forEach(page => {
-                    page.classList.add('hidden');
-                });
-
-                // Show the target page
-                const targetPage = document.getElementById(targetId + '-page');
-                if (targetPage) {
-                    targetPage.classList.remove('hidden');
-                    window.scrollTo(0, 0); // Scroll to top on page change
-                }
-
-                // Update active link style
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.dataset.target === targetId) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-
-            // Add click listeners to all nav links
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.dataset.target;
-                    showPage(targetId);
-
-                    // Close mobile menu if open
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                });
-            });
 
             // --- Mobile Menu Toggle ---
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
+            });
+            
+            // --- Close mobile menu on link click ---
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
             });
 
             // --- Contact Form Submission ---
@@ -289,12 +267,41 @@
                 e.preventDefault();
                 
                 // For demo purposes, we'll just show a success message.
-                // In a real application, you would send the data to a server here.
                 formMessage.classList.remove('hidden', 'bg-red-200', 'text-red-800');
                 formMessage.classList.add('bg-green-200', 'text-green-800');
                 formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
                 
                 contactForm.reset();
+            });
+
+            // --- Active Nav Link Highlighting on Scroll ---
+            const sections = document.querySelectorAll('.page-content');
+            const desktopNavLinks = document.querySelectorAll('#desktop-nav .nav-link');
+            const mobileNavLinks = document.querySelectorAll('#mobile-menu .nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        
+                        desktopNavLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                        });
+                        mobileNavLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
             });
         });
     </script>
